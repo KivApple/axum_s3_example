@@ -1,0 +1,19 @@
+[package]
+name = "axum_s3_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.20"
+env_logger = "0.10.0"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+axum = { version = "0.6.20", features = ["multipart"] }
+serde = "1.0.188"
+uuid = { version = "1.4.1", features = ["v4"] }
+rust-s3 = "0.34.0-rc1"
+futures = "0.3.28"
+async-compat = "0.2.2"
+async-hash = "0.5.1"
+hex = "0.4.3"
